@@ -44,6 +44,31 @@ npm start
 
 The application will be available at `http://localhost:8000`
 
+## Production Build
+
+To create a production build:
+```
+npm run build
+``` 
+
+This will:
+1. Create a `dist` directory with optimized build
+2. Bundle all JavaScript modules
+3. Copy and optimize assets
+4. Generate production-ready HTML
+
+The `dist` directory will contain:
+```
+dist/ ├── index.html # Optimized HTML ├── src/ │ ├── style.css # Copied CSS files │ └── ... # Other assets ├── screenshot.png # Project images └── assets/ └── index-hash.js # Bundled and minified JavaScript
+``` 
+
+To preview the production build:
+```
+npm run preview
+``` 
+
+
+
 ## Project Structure
 ```
 cocktail-assistant/

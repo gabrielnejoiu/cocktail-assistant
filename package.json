@@ -1,17 +1,27 @@
 {
-  "name": "pion-starter-app",
+  "name": "cocktail-assistant",
   "version": "1.0.0",
-  "description": "A project for creating apps with Pion and lit-html.",
+  "description": "A project for creating recipes using Pion.",
   "main": "index.html",
   "scripts": {
-    "start": "web-dev-server --node-resolve --open --watch"
+    "start": "web-dev-server --node-resolve --open --watch",
+    "build": "rollup -c",
+    "serve:prod": "web-dev-server --root-dir dist --app-index index.html --open",
+    "preview": "npm run build && npm run serve:prod"
   },
   "dependencies": {
     "@pionjs/pion": "^2.8.3",
     "lit-html": "^2.8.0"
   },
   "devDependencies": {
-    "@web/dev-server": "^0.3.6"
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@web/rollup-plugin-html": "^2.0.0",
+    "@web/rollup-plugin-copy": "^0.4.0",
+    "@web/dev-server": "^0.3.6",
+    "rollup": "^4.1.4"
   },
-  "keywords": ["web-components", "lit-html"]
+  "keywords": [
+    "web-components",
+    "lit-html"
+  ]
 }
