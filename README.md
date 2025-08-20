@@ -27,19 +27,19 @@ A modern web application built with Pion and lit-html that helps users discover 
 
 1. Clone the repository:
 ```
-bash git clone [https://github.com/yourusername/cocktail-assistant.git](https://github.com/yourusername/cocktail-assistant.git) cd cocktail-assistant
+bash git clone [https://github.com/gabrielnejoiu/cocktail-assistant.git](https://github.com/gabrielnejoiu/cocktail-assistant.git) cd cocktail-assistant
 ``` 
 
 2. Install dependencies:
 ```
-bash npm install
+npm install
 ``` 
 
 ## Development
 
 Start the development server:
 ```
-bash npm start
+npm start
 ``` 
 
 The application will be available at `http://localhost:8000`
