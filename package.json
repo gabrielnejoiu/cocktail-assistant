@@ -7,17 +7,27 @@
     "start": "web-dev-server --node-resolve --open --watch",
     "build": "rollup -c",
     "serve:prod": "web-dev-server --root-dir dist --app-index index.html --open",
-    "preview": "npm run build && npm run serve:prod"
+    "preview": "npm run build && npm run serve:prod",
+    "test": "web-test-runner \"src/tests/**/*.test.js\" --node-resolve --coverage",
+    "test:watch": "web-test-runner \"src/tests/**/*.test.js\" --node-resolve --watch"
   },
   "dependencies": {
     "@pionjs/pion": "^2.8.3",
-    "lit-html": "^2.8.0"
+    "lit-html": "^2.8.0",
+    "sinon": "^21.0.0"
   },
   "devDependencies": {
+    "@open-wc/testing": "^3.2.2",
     "@rollup/plugin-node-resolve": "^15.2.3",
-    "@web/rollup-plugin-html": "^2.0.0",
+    "@web/dev-server": "^0.4.6",
     "@web/rollup-plugin-copy": "^0.4.0",
-    "@web/dev-server": "^0.3.6",
+    "@web/rollup-plugin-html": "^2.0.0",
+    "@web/test-runner": "^0.18.3",
+    "@web/test-runner-commands": "^0.9.0",
+    "@web/test-runner-puppeteer": "^0.18.0",
+    "cross-env": "^10.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "rollup": "^4.1.4"
   },
   "keywords": [
